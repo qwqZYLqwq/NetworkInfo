@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MIUI 风格浅色配色 -->
+    <color name="bg">#F3F4F6</color>
+    <color name="card">#FFFFFF</color>
+    <color name="accent">#3B87F7</color>
+    <color name="label">#9A9EA8</color>
+    <color name="value">#1C1D24</color>
+    <color name="title">#1C1D24</color>
+    <color name="chipBg">#EAF1FE</color>
+    <color name="iconBg">#3B87F7</color>
+</resources>

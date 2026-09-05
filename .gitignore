@@ -1,0 +1,12 @@
+# 构建产物
+build/
+*.apk
+screenshot.png
+
+# 签名密钥（不要提交）
+debug.keystore
+*.keystore
+*.jks
+
+# 构建工具缓存（ecj 编译器由 build.ps1 自动下载）
+/tools/
