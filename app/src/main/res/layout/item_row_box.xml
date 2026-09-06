@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/label"/>
+
+    <!-- 不可编辑的文本框：可长按调出选择工具复制，但不弹出输入法 -->
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_value_box"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/value"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:textIsSelectable="true"
+        android:longClickable="true"
+        android:maxLines="2"/>
+</LinearLayout>

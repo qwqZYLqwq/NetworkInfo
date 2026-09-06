@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -190,7 +191,7 @@ public class MainActivity extends Activity {
                 String kind = v6KindText((Inet6Address) a, v6Flags);
                 if (kind != null) extra = "（" + kind + "）";
             }
-            addRow(parent, rowLabel + extra, stripZone(a.getHostAddress()));
+            addRow(parent, rowLabel + extra, stripZone(a.getHostAddress()), true);
         }
         return true;
     }
@@ -226,11 +227,25 @@ public class MainActivity extends Activity {
     }
 
     private View addRow(ViewGroup parent, String label, String value) {
+        return addRow(parent, label, value, false);
+    }
+
+    /** box=true：值显示为不可编辑的文本框，可长按调出选择工具复制 */
+    private View addRow(ViewGroup parent, String label, String value, boolean box) {
         final Entry e = new Entry(label, value);
         entries.add(e);
-        View row = LayoutInflater.from(this).inflate(R.layout.item_row, parent, false);
+        View row = LayoutInflater.from(this)
+                .inflate(box ? R.layout.item_row_box : R.layout.item_row, parent, false);
         ((TextView) row.findViewById(R.id.label)).setText(label);
-        ((TextView) row.findViewById(R.id.value)).setText(value);
+        if (box) {
+            EditText et = (EditText) row.findViewById(R.id.value);
+            et.setText(value);
+            et.setKeyListener(null);          // 不可编辑、不弹输入法
+            et.setTextIsSelectable(true);     // 长按可调出选择/复制工具
+            et.setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, 14);
+        } else {
+            ((TextView) row.findViewById(R.id.value)).setText(value);
+        }
         row.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) { copy(e.label, e.value); }
         });
