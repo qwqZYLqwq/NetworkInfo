@@ -9,6 +9,9 @@ _✨ 查看本机各类网络信息，每条都能一键复制 ✨_
 <p align="center">
   <img src="https://img.shields.io/github/v/release/qwqZYLqwq/NetworkInfo" alt="release">
   <img src="https://img.shields.io/github/downloads/qwqZYLqwq/NetworkInfo/total" alt="downloads">
+  <img src="https://img.shields.io/github/commit-activity/m/qwqZYLqwq/NetworkInfo" alt="commit activity">
+  <img src="https://img.shields.io/github/last-commit/qwqZYLqwq/NetworkInfo" alt="last commit">
+  <br>
   <img src="https://img.shields.io/badge/platform-Android-3DDC84" alt="platform">
   <img src="https://img.shields.io/badge/minSdk-26%20(Android%208.0)-blue" alt="minSdk">
   <img src="https://img.shields.io/badge/%E5%AE%9E%E6%B5%8B-Android%209-brightgreen" alt="tested">
