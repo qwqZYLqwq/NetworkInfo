@@ -1,22 +1,9 @@
-<div align="center">
-
 # NetworkInfo — 网络信息查看器
 
 _✨ 查看本机各类网络信息，每条都能一键复制 ✨_
 
-</div>
-
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/qwqZYLqwq/NetworkInfo" alt="release">
-  <img src="https://img.shields.io/github/downloads/qwqZYLqwq/NetworkInfo/total" alt="downloads">
-  <img src="https://img.shields.io/github/commit-activity/m/qwqZYLqwq/NetworkInfo" alt="commit activity">
-  <img src="https://img.shields.io/github/last-commit/qwqZYLqwq/NetworkInfo" alt="last commit">
-  <br>
-  <img src="https://img.shields.io/badge/platform-Android-3DDC84" alt="platform">
-  <img src="https://img.shields.io/badge/minSdk-26%20(Android%208.0)-blue" alt="minSdk">
-  <img src="https://img.shields.io/badge/%E5%AE%9E%E6%B5%8B-Android%209-brightgreen" alt="tested">
-  <img src="https://img.shields.io/badge/APK-%E7%BA%A625KB-orange" alt="size">
-</p>
+![release](https://img.shields.io/github/v/release/qwqZYLqwq/NetworkInfo) ![downloads](https://img.shields.io/github/downloads/qwqZYLqwq/NetworkInfo/total) ![commit activity](https://img.shields.io/github/commit-activity/m/qwqZYLqwq/NetworkInfo) ![last commit](https://img.shields.io/github/last-commit/qwqZYLqwq/NetworkInfo)
+![platform](https://img.shields.io/badge/platform-Android-3DDC84) ![minSdk](https://img.shields.io/badge/minSdk-26%20(Android%208.0)-blue) ![实测](https://img.shields.io/badge/%E5%AE%9E%E6%B5%8B-Android%209-brightgreen) ![APK](https://img.shields.io/badge/APK-%E7%BA%A625KB-orange)
 
 一个轻量的安卓应用，快捷查看本机的各类网络信息，每条信息均可单独一键复制。
 
